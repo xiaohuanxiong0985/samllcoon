@@ -24,11 +24,8 @@ export default {
     return {
       title: this.title,
       meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: '测试滚动头部'
-        }
+        { hid: 'keywords', name: 'keywords', content: 'nuxt,小浣熊,ssr' },
+        { hid: 'description', name: 'description', content: '网页描述' }
       ]
     }
   },

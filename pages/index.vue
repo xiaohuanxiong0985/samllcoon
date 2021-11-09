@@ -1,27 +1,26 @@
 <template>
   <div class="warp">
-    <h1>{{ title }}</h1>
-    <h2>{{ des }}</h2>
+    <h1 class="animate__animated animate__backInLeft">
+      An animated element
+    </h1>
   </div>
 </template>
 
 <script>
+import 'animate.css'
 export default {
   data () {
     return {
-      title: 'Hello World!',
-      des: '欢迎使用nuxt'
+      title: '',
+      des: ''
     }
   },
   head () {
     return {
       title: this.title,
       meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'My custom description'
-        }
+        { hid: 'keywords', name: 'keywords', content: 'nuxt,小浣熊,ssr' },
+        { hid: 'description', name: 'description', content: 'My custom description' }
       ]
     }
   },
@@ -34,12 +33,6 @@ export default {
 .warp {
   display: flex;
   flex-direction: column;
-  h1 {
-    color: red;
-  }
-  h2 {
-    color: aqua;
-  }
 }
 
 </style>
